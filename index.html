@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Netflix Homepage</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #141414;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navigation {
+      display: flex;
+      gap: 20px;
+    }
+
+    .navigation a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      height: 500px;
+      background-image: url('path/to/hero-image.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #e50914;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+
+    .movies, .tv-shows {
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .movie-list, .tv-show-list {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .movie-item, .tv-show-item {
+      width: 150px;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .movie-item img, .tv-show-item img {
+      width: 100%;
+      border-radius: 4px;
+    }
+
+    .movie-item h3, .tv-show-item h3 {
+      margin-top: 10px;
+    }
+
+    .movie-item:hover, .tv-show-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+
+    .footer {
+      text-align: center;
+      padding-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="logo">Netflix</h1>
+      <nav class="navigation">
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">TV Shows</a>
+        <a href="#">My List</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Welcome to Netflix</h1>
+      <p>Watch unlimited movies and TV shows anytime, anywhere.</p>
+      <a href="#" class="cta-button">Sign up now</a>
+    </section>
+
+    <section class="movies">
+      <h2>Popular Movies</h2>
+      <div class="movie-list">
+        <div class="movie-item">
+          <img src="2.jpg" alt="Movie 1">
+          <h3>Movie 1</h3>
+        </div>
+        <div class="movie-item">
+          <img src="3.jpg" alt="Movie 2">
+          <h3>Movie 2</h3>
+        </div>
+        <div class="movie-item">
+            <img src="4.jpg" alt="Movie 2">
+            <h3>Movie 3</h3>
+          </div>
+          <div class="movie-item">
+            <img src="5.jpg" alt="Movie 2">
+            <h3>Movie 4</h3>
+          </div>
+          <div class="movie-item">
+            <img src="6.jpg" alt="Movie 2">
+            <h3>Movie 5</h3>
+          </div>
+          <div class="movie-item">
+            <img src="7.jpg" alt="Movie 2">
+            <h3>Movie 6</h3>
+          </div>
+          <div class="movie-item">
+            <img src="8.jpg" alt="Movie 2">
+            <h3>Movie 7</h3>
+          </div>
+      </div>
+    </section>
+
+    <section class="tv-shows">
+      <h2>Popular TV Shows</h2>
+      <div class="tv-show-list">
+        <div class="tv-show-item">
+          <img src="9.jpg" alt="TV Show 1">
+          <h3>TV Show 1</h3>
+        </div>
+        <div class="tv-show-item">
+          <img src="10.jpg" alt="TV Show 2">
+          <h3>TV Show 2</h3>
+        </div>
+        <div class="tv-show-item">
+            <img src="11.jpg" alt="TV Show 2">
+            <h3>TV Show 3</h3>
+          </div>
+          <div class="tv-show-item">
+            <img src="18.jpg" alt="TV Show 2">
+            <h3>TV Show 4</h3>
+          </div>
+          <div class="tv-show-item">
+            <img src="13.jpg" alt="TV Show 2">
+            <h3>TV Show 5</h3>
+          </div>
+          <div class="tv-show-item">
+            <img src="14.jpg" alt="TV Show 2">
+            <h3>TV Show 6</h3>
+          </div>
+          <div class="tv-show-item">
+            <img src="15.jpg" alt="TV Show 2">
+            <h3>TV Show 7</h3>
+          </div>
+        
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2023 Netflix. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
